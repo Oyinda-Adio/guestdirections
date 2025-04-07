@@ -1,0 +1,155 @@
+/* Beautiful Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1c1c1c, #2c3e50);
+    color: white;
+    text-align: center;
+}
+
+.logo   {
+    width: 20%
+} 
+
+/* Container with Glass Effect */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.2em;
+    color: #f4f4f4;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Location Cards */
+.location-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover Effect */
+.location-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 8px 15px rgba(255, 118, 118, 0.5);
+}
+
+/* Images */
+.location-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Image Zoom */
+.location-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+/* Location Titles */
+.card-content h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+    }
+
+    .logo {
+        width: 30%
+    }
+}
+
+.location-prompt {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15); /* Subtle glass effect */
+    padding: 12px 20px;
+    border-radius: 8px; /* Smooth rounded corners */
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(5px); /* Smooth glass effect */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
